@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Demonstrating a style applied to the whole body, what we've done so far */
+
+/* body {
+	color:  blue;
+} */
+
+/* Match multiple elements separated by a , */
+h1, h3 {
+	color:  black;
+}
+
+/* Parent descendant relationship, put the parent attribute followed by the child attribute */
+/* Notice how this applies to ALL children <p> tags of the <aside> */
+/*aside p {
+	color:  purple;
+}*/
+
+/* We can be more specific and target only a direct child <p> of our <aside> using the parent > child syntax */
+/* aside > p {
+	color:  orange;
+} */
+
+/* We can specify styles for an element preceded by a sibling element */
+/* Why didn't the "Here is another paragraph turn brown? */
+ul + p {
+	color:  rgb(46, 222, 79);
+}
+
+/* We can modify the behavior of the selector above to target all siblings using the ~ syntax */
+/* ul ~ p {
+	color:  brown;
+}*/
+
+/* Finally we can use the wildcard selector * to specify all elements */
+aside > * {
+	color: black;
+}
