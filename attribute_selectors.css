@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Target a specific type of element with a unique #id */
+body#main {
+	color:  blue;
+}
+
+/* A more common way of targeting a specific #id, we leave out the element because it is typically redundant */
+
+#secondary_h3 {
+	color: rgb(21, 21, 23);
+}
+
+/* Target a specific element by class, very similar to #id, but you'll normally have multiple elements that share a class */
+/* p.cursive {
+	color: green;
+	font-family: cursive;
+}*/
+
+/* Targeting any element of a class */
+.cursive {
+	color:  orange;
+	font-family: cursive;
+}
+
+/* Targeting elements by their attributes */
+/*li[value] {
+	color: black;
+}*/
+
+/* Specifying a specific attribute value */
+/*li[value="2"] {
+	color: brown;
+}*/
+
+blockquote[cite] {
+	color: purple;
+}
+
+/* Some additional attribute examples */
+blockquote[cite="www.ign.com"] {
+	color:  red;
+}
+
+/* There are additional selectors for working with attributes however they are more advanced and not commonly used */
